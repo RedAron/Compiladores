@@ -122,3 +122,5 @@ STATICFILES_DIRS=[
 ]
 STATIC_URL = '/static/'
 
+MEDIA_ROOT='media'#busca la ruta donde estan las imagenes
+MEDIA_URL='/media/'#url que va a conformar para traer archivos
