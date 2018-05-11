@@ -10,7 +10,7 @@ from  django.shortcuts import render
 
 # Create your views here.
 
-def hello_world(request):
+def login(request):
 	#ordenar por id
 	template=loader.get_template('index.html')
 	
