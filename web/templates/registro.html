@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>{{title}}</title>
+</head>
+<body>
+    <h1>New article</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {%csrf_token%}
+        {{form.as_p}}
+        <button type="submit">Summit</button>
+    </form>
+    
+</body>
+</html>
