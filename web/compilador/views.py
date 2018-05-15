@@ -7,14 +7,15 @@ from django.http import HttpResponse,HttpResponseRedirect
 from django.template import loader
 from  django.shortcuts import render
 from .forms import UsuariosForm
-
+from .models import Usuario
 
 # Create your views here.
 
 def login(request):
-	#ordenar por id
+	Usuarios=Usuario.objects#ordenar por id
 	template=loader.get_template('index.html')
 	context={
+		'Usuario':Usuarios
 	}
 	
 	return HttpResponse(template.render(context,request))
